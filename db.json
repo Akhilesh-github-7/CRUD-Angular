@@ -1,0 +1,10 @@
+{
+    "items":[
+        {"id":100,"name":"Iphone16pro","category":"SmartPhone","brand":"Apple"},
+        {"id":101,"name":"MacBook","category":"Laptop","brand":"Apple"},
+        {"id":102,"name":"A95L","category":"Television","brand":"SONY"},
+        {"id":103,"name":"SurfacePro","category":"Laptop","brand":"Microsoft"},
+        {"id":104,"name":"Realme14Pro","category":"SmartPhone","brand":"Realme"},
+        {"id":105,"name":"LR57","category":"Television","brand":"LG"}
+    ]
+}

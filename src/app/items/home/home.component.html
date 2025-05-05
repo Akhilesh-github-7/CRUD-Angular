@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 10px;">
+    <table class="table table-success">
+        <thead>
+            <tr class="bg-primary">
+                <th scope="col">ItemId</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itm of items">
+                <td scope="row">{{itm.id}}</td>
+                <td scope="row">{{itm.name}}</td>
+                <td scope="row">{{itm.category}}</td>
+                <td scope="row">{{itm.brand}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
