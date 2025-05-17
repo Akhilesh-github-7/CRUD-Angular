@@ -13,7 +13,7 @@
             <input type="text" class="form-control" name="brand" id="brand" [(ngModel)]="item.brand" aria-describedby="brand" placeholder="Enter brand">
           </div><br>
        
-        <button type="submit" class="btn btn-success">Submit</button>
-        <button type="button" class="btn btn-danger ms-2">Cancel</button>
+        <button type="submit" (click)="create()" class="btn btn-success">Submit</button>
+        <button type="button" (click)="cancel()" class="btn btn-danger ms-2">Cancel</button>
       </form>
 </div>

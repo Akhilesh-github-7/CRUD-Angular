@@ -6,6 +6,8 @@
                 <th scope="col">Name</th>
                 <th scope="col">Category</th>
                 <th scope="col">Brand</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -14,6 +16,8 @@
                 <td scope="row">{{itm.name}}</td>
                 <td scope="row">{{itm.category}}</td>
                 <td scope="row">{{itm.brand}}</td>
+                <td scope="row"><button class="btn btn-success" [routerLink]="['/items/edit',itm.id]">Edit</button></td>
+                <td  scope="row"><button class="btn btn-danger" (click)="delete(itm.id)">Delete</button></td>
             </tr>
         </tbody>
     </table>

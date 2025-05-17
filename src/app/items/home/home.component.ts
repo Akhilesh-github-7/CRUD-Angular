@@ -19,4 +19,15 @@ export class HomeComponent implements OnInit{
     })
   }
 
+  delete(id:Number){
+    const isConfirmed = window.confirm("Are you sure you want to delete the data");
+
+    if(isConfirmed){
+       this.itemsService.delete(id).subscribe((data)=>{
+      this.items=this.items.filter(itm=>itm.id!==id)
+    })
+    window.location.reload();
+    }
+  }
+
 }
